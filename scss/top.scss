@@ -1,10 +1,20 @@
-$c-text: #fff;
-
 .top {
 	background: url(../images/top.png) center no-repeat;
     background-size: cover;
     min-height: 500px;
     padding-top: 1px;
+
+    @media (min-width: 576px) {
+		min-height: 670px;
+    }
+
+    @media (min-width: 768px) {
+		min-height: 800px;
+    }
+
+    @media (min-width: 992px) {
+		min-height: 1000px;
+    }
 
 	&__heading {
 		color: white;
@@ -12,8 +22,28 @@ $c-text: #fff;
 	    font-size: 26px;
 	    text-align: center;
 	    margin: 253px 0px 65px;
-	    border-top: 2px solid $c-text;
-	    border-bottom: 2px solid $c-text;
+	    border-top: 2px solid $c-text-white;
+	    border-bottom: 2px solid $c-text-white;
+
+	    @media (min-width: 576px) {
+			font-size: 35px;
+			margin: 400px 36px 65px;
+	    }
+
+	    @media (min-width: 768px) {
+			font-size: 40px;
+			margin: 480px 92px 65px;
+    	}
+
+    	@media (min-width: 992px) {
+			font-size: 53px;
+			margin: 500px 134px 65px;
+    	}
+
+    	@media (min-width: 1200px) {
+			font-size: 60px;
+			margin: 500px 195px 65px;
+    	}
 	}
 
 	&__btnWrapper {
@@ -28,17 +58,42 @@ $c-text: #fff;
 	    border: 2px solid #fff;
 	    padding: 15px 20px;
 	    transition: 0.5s;
+	    display: inline-block;
+
+	    	&:hover {
+			background: rgba(0, 0, 0, 0.5);
+			}
+
+		@media (min-width: 576px) {
+			font-size: 16px;
+	    }
+
+	    @media (min-width: 768px) {
+			font-size: 17px;
+    	}
+
+    	@media (min-width: 992px) {
+			font-size: 18px;
+			padding: 20px 35px;
+    	}
 	}
 
-	&__btn {
-		&:hover {
-			background: rgba(0, 0, 0, 0.5);
-		}
-	}
 
 	&__block {
 		position: relative;
 		height: 85px;
+
+		@media (min-width: 576px) {
+			height: 100px;
+	    }
+
+		@media (min-width: 768px) {
+			height: 130px;
+	    }
+
+	    @media (min-width: 992px) {
+			height: 250px;
+    	}
 	}
 
 	.circle {
@@ -48,132 +103,42 @@ $c-text: #fff;
 	    position: absolute;
 	    right: 0;
 	    bottom: 0;
-	    border: 2px solid $c-text;
+	    border: 2px solid $c-text-white;
+
+	    @media (min-width: 768px) {
+			width: 9px;
+			height: 9px;
+	    }
+
+	    @media (min-width: 992px) {
+			width: 11px;
+			height: 11px;
+			border-width: 3px;
+    	}
 	}
 
 	.circle:first-child {
 		bottom: 20px;
-		background: $c-text;
+		background: $c-text-white;
+
+		@media (min-width: 768px) {
+			bottom: 30px;
+	    }
+
+	    @media (min-width: 992px) {
+			bottom: 40px;
+	    }
 	}
 
 	.circle:last-child {
 		bottom: 10px;
-	}
-}
 
-/**/
-@media (min-width: 360px) {
-	.container {
-		max-width: 360px;
-	}
-}
-
-@media (min-width: 576px) {
-	.container {
-		max-width: 540px;
-	}
-
-	.top {
-		min-height: 670px;
-	
-
-		&__heading {
-			font-size: 35px;
-			margin: 400px 36px 65px;
-		}
-
-		&__btn {
-			font-size: 16px;
-		}
-
-		&__block {
-			height: 100px;
-		}
-	}
-}
-
-@media (min-width: 768px) {
-	.container {
-		max-width: 720px;
-	}
-
-	.top {
-		min-height: 800px;
-
-		&__heading {
-			font-size: 40px;
-			margin: 480px 92px 65px;
-		}
-
-		&__btn {
-			font-size: 17px;
-		}
-
-		&__block {
-			height: 130px;
-		}
-
-		.circle {
-			width: 9px;
-			height: 9px;
-		}
-
-		.circle:first-child {
-			bottom: 30px;	
-		}
-
-		.circle:last-child {
+		@media (min-width: 768px) {
 			bottom: 15px;
-		}
-	}
-}
+	    }
 
-@media (min-width: 992px) {
-	.container {
-		max-width: 960px;
-	}
-
-	.top {
-		min-height: 1000px;
-	
-
-		&__heading {
-			font-size: 53px;
-			margin: 500px 134px 65px;
-		}
-
-		&__btn {
-			font-size: 18px;
-			padding: 20px 35px;
-		}
-
-		&__block {
-			height: 250px;
-		}
-
-		.circle {
-			width: 11px;
-			height: 11px;
-			border-width: 3px;
-		}
-
-		.circle:first-child {
-			bottom: 40px;	
-		}
-
-		.circle:last-child {
+	    @media (min-width: 992px) {
 			bottom: 20px;
-		}
-	}
-}
-
-@media (min-width: 1200px) {
-	.container {
-		max-width: 1170px;
-	}
-	
-	.top__heading {
-		font-size: 60px;
-		margin: 500px 195px 65px;
+	    }
 	}
 }
