@@ -1,5 +1,5 @@
 .about {
-	background: #f2f2f1;
+	background: $c-bg;
 
 	&__img {
 		width: 50%;
@@ -53,9 +53,7 @@
 			}
 
 			&-top .title {
-				text-transform: uppercase;
-				font-size: 22px;
-				color: $c-title;
+				@extend %title;
 
 				@media (min-width: 768px) {
 					font-size: 25px;
@@ -71,9 +69,7 @@
 			}
 
 			&-top .description {
-				font-size: 16px;
-				line-height: 25px;
-				color: $c-description;
+				@extend %description;
 
 				@media (min-width: 576px) {
 					line-height: 24px;
@@ -175,10 +171,6 @@
 							font-size: 18px;
 						}
 					}
-
 			}
 	}
-
-	
-
 }

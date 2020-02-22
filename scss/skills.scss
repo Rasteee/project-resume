@@ -1,0 +1,159 @@
+.skills {
+
+	&Wrapper {
+		    display: flex;
+    		padding: 50px 0;
+    		flex-direction: column;
+
+    		@media (min-width: 768px) {
+    			padding: 75px 0;
+    		}
+
+    		@media (min-width: 1200px) {
+    			padding: 100px 0;
+    			flex-direction: row;
+    		}
+
+	}
+
+	&__content {
+   		text-align: justify;
+
+   		@media (min-width: 1200px) {
+    		padding-right: 100px;
+    	}
+
+
+		&-title {
+			@extend %title;
+		 	margin: 0 0 20px;
+
+		 	@media (min-width: 576px) {
+		 		font-size: 24px;
+		 		margin-bottom: 35px;
+		 	}
+
+		 	@media (min-width: 768px) {
+    			font-size: 28px;
+    		}
+
+    		@media (min-width: 992px) {
+    			font-size: 30px;
+    		}
+
+    		@media (min-width: 1200px) {
+    			margin-bottom: 60px;
+    		}
+		}
+
+		&-description {
+			@extend %description;
+
+			@media (min-width: 576px) {
+		 		font-size: 17px;
+		 		margin-bottom: 25px;
+		 	}
+
+		 	@media (min-width: 768px) {
+    			font-size: 18px;
+    			margin-bottom: 40px;
+    			line-height: 25px;
+    		}
+		}
+
+		&-btnWrapper {
+			text-align: center;
+			margin-top: 60px;
+			margin-bottom: 40px;
+
+			@media (min-width: 576px) {
+		 		margin-bottom: 50px;
+		 	}
+
+		 	@media (min-width: 768px) {
+    			margin-bottom: 60px;
+    		}
+
+    		@media (min-width: 1200px) {
+    			margin-top: 80px;
+    			margin-bottom: 0;
+    			text-align: left;
+    		}
+		}
+
+		&-btn {
+			@extend %btn;
+
+		    @media (min-width: 576px) {
+		 		font-size: 18px;
+		 	}
+
+		 		&:hover {
+					background:$c-btn;
+					color: #fff;
+				}
+		}
+	}
+
+	&__progress {
+
+		&-title {
+			font-size: 18px;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-top: 25px;
+
+			@media (min-width: 576px) {
+		 		font-size: 20px;
+		 	}
+
+		 	@media (min-width: 768px) {
+    			font-size: 22px;
+    		}
+
+    		@media (min-width: 1200px) {
+    			margin-top: 50px;
+    		}
+		}
+
+		&-block {
+			height: 30px;
+			background: #f2f2f1;
+
+			@media (min-width: 768px) {
+    			width: 80%;
+    		}
+
+    		@media (min-width: 1200px) {
+    			width: 560px;
+    		}
+
+			&Filed {
+				height: 30px;
+				font-size: 18px;
+				font-weight: bold;
+				line-height: 30px;
+				text-align: right;
+				color: #fff;
+				background: $c-btn;
+				padding-right: 10px;
+
+				&.first {
+					width: 90%;
+				}
+
+				&.second {
+					width: 80%;
+				}
+
+				&.third {
+					width: 90%;
+				}
+
+				&.fourth {
+					width: 70%;
+				}
+			}
+		}
+	}	
+}

@@ -1,0 +1,86 @@
+.slider {
+	background: $c-bg;
+
+	&__content {
+		padding: 25px 0;
+	    text-align: center;
+
+	    @media (min-width: 768px) {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+
+		@media (min-width: 1200px) {
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+
+		&-text {
+			font-size: 18px;
+		    font-style: italic;
+		    line-height: 25px;
+			color: $c-description;
+
+			@media (min-width: 576px) {
+				font-size: 20px;
+			}
+
+			@media (min-width: 992px) {
+				font-size: 22px;
+				line-height: 28px;
+			}
+
+			@media (min-width: 1200px) {
+				font-size: 24px;
+				line-height: 30px;
+			}
+		}
+
+		&-title {
+			font-size: 16px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: $c-title;
+			margin: 30px 0;
+
+			@media (min-width: 576px) {
+				font-size: 17px;
+			}
+
+			@media (min-width: 768px) {
+				margin-top: 25px;
+				margin-bottom: 25px;
+			}
+
+			@media (min-width: 992px) {
+				font-size: 18px;
+				margin-top: 50px;
+			}
+		}
+
+		& .slick-dots {
+			list-style: none;
+			display: flex;
+    		justify-content: center;
+    		padding: 0;
+
+    		& button {
+    			border: 2px solid $c-btn;
+			    background: inherit;
+			    border-radius: 5px;
+			    margin-right: 10px;
+			    font-size: 0;
+			    padding: 3px;
+			    outline: none;
+
+			    &:hover {
+			    	background: $c-btn;
+			    }
+    		}
+
+    		& .slick-active button {
+		    	background: $c-btn;
+		    }
+		}
+	}
+}

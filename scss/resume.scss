@@ -1,0 +1,76 @@
+.resume {
+	background:$c-bg;
+	position: relative;
+
+	&__content {
+	    text-align: center;
+	    padding: 25px 0 50px;
+
+	    @media (min-width: 768px) {
+	    	padding: 50px 0 75px;
+	    }
+
+	    @media (min-width: 1200px) {
+	    	padding: 100px 0;
+	    }
+
+    	&::after {
+			content: "";
+			border-left: 30px solid transparent;
+			border-right: 30px solid transparent;
+			border-top: 20px solid $c-bg;
+			position: absolute;
+			right: 48%;
+			bottom: -20px;
+		}
+
+
+		&-title {
+			@extend %title;
+
+			@media (min-width: 576px) {
+				font-size: 28px;
+			}
+
+			@media (min-width: 768px) {
+				font-size: 30px;
+			}
+		}
+
+		&-description {
+			@extend %description;
+		    margin: 40px 0;
+
+		    @media (min-width: 576px) {
+				font-size: 17px;
+				margin: 55px 0;
+			}
+
+			@media (min-width: 768px) {
+				font-size: 18px;
+				line-height: 25px;
+			}
+
+			@media (min-width: 1200px) {
+	    		margin: 70px 0;
+	    	}
+		}
+
+		&-btn {
+			@extend %btn;
+
+			@media (min-width: 768px) {
+				font-size: 17px;
+			}
+
+			@media (min-width: 1200px) {
+	    		font-size: 18px;
+	    	}
+
+				&:hover {
+					background:$c-btn;
+					color: #fff;
+				}
+		}
+	}
+}
