@@ -1,0 +1,151 @@
+.portfolio {
+	text-align: center;
+	padding: 25px 0;
+
+	@media (min-width: 768px) {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+
+	@media (min-width: 1200px) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	&__title {
+		@extend %title;
+
+		@media (min-width: 576px) {
+			font-size: 24px;
+		}
+
+		@media (min-width: 768px) {
+			font-size: 28px;
+		}
+
+		@media (min-width: 992px) {
+			font-size: 30px;
+		}
+	}
+
+	&__description {
+		@extend %description;
+
+		@media (min-width: 576px) {
+			font-size: 17px;
+		}
+
+		@media (min-width: 768px) {
+			font-size: 18px;
+			line-height: 28px;
+		}
+
+		@media (min-width: 992px) {
+			line-height: 30px;
+			margin-top: 50px;
+		}
+	}
+
+	 &__projects {
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+    	align-items: center;
+
+    	@media (min-width: 768px) {
+			margin-top: 75px;
+		}
+
+		@media (min-width: 992px) {
+			margin-top: 100px;
+			flex-direction: row;
+			flex-wrap: wrap;
+    		justify-content: space-around;
+		}
+
+		@media (min-width: 1200px) {
+			justify-content: space-between;
+		}
+	 }
+
+	 &__project {
+	 	width: 100%;
+	 	height: 100%;
+	 	background:url("../images/portfolio-1.png") no-repeat;
+	 	background-size: cover;
+
+	 	&Wrapper {
+	 		width: 270px;
+	 		height: 200px;
+	 		position: relative;
+	 		margin-bottom: 20px;
+
+	 		@media (min-width: 768px) {
+				width: 370px;
+		 		height: 300px;
+		 		margin-bottom: 40px;
+			}
+	 	}
+
+	 	&Overlay {
+	 		display: flex;
+	 		justify-content: center;
+	 		align-items: center;
+	 		position: absolute;
+	 		top: 0;
+	 		right: 0;
+	 		bottom: 0;
+	 		left: 0;
+	 		background: rgba(63,182,116, .5);
+	 		opacity: 0;
+	 		visibility: visible;
+	 		transition: .3s;
+
+	 		&:hover {
+	 			opacity: 1;
+	 		}
+	 	}
+
+ 		&.project-2 {
+ 			background:url("../images/portfolio-2.png");
+ 		}
+
+ 		&.project-3 {
+ 			background:url("../images/portfolio-3.png");
+ 		}
+
+ 		&.project-4 {
+ 			background:url("../images/portfolio-4.png");
+ 		}
+
+ 		&.project-5 {
+ 			background:url("../images/portfolio-5.png");
+ 		}
+
+ 		&.project-6 {
+ 			background:url("../images/portfolio-6.png");
+ 		}
+
+ 		&.project-7 {
+ 			background:url("../images/portfolio-7.png");
+ 		}
+
+ 		&.project-8 {
+ 			background:url("../images/portfolio-8.png");
+ 		}
+
+ 		&.project-9 {
+ 			background:url("../images/portfolio-9.png");
+ 		}
+
+	 	&Icon {
+			color: 	#fff;
+			font-size: 50px;
+			line-height: 300px;
+
+			@media (min-width: 768px) {
+				font-size: 60px;
+			}
+	 	}
+	 }
+}

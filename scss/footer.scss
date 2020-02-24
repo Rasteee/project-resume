@@ -1,0 +1,33 @@
+.footer {
+	background: $c-dark;
+	text-align: center;
+	padding: 50px 0;
+
+	&__text {
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 300;
+		color: $c-dark-light;
+		margin-bottom: 30px;
+	}
+
+	&__socials {
+		padding: 1px;
+		
+		&Link {
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			background: $c-dark-light;
+			color: $c-dark;
+			border-radius: 50%;
+			line-height: 35px;
+			transition: .3s;
+			margin: 0 5px;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}	
+}
