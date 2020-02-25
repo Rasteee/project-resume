@@ -71,6 +71,7 @@
 			    margin-right: 10px;
 			    font-size: 0;
 			    padding: 3px;
+			    cursor: pointer;
 			    outline: none;
 
 			    &:hover {
@@ -81,6 +82,10 @@
     		& .slick-active button {
 		    	background: $c-btn;
 		    }
+		}
+
+		.slick-slide {
+			outline: none;
 		}
 	}
 }

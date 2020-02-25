@@ -1046,6 +1046,7 @@ a {
   margin-right: 10px;
   font-size: 0;
   padding: 3px;
+  cursor: pointer;
   outline: none;
 }
 .slider__content .slick-dots button:hover {
@@ -1053,6 +1054,9 @@ a {
 }
 .slider__content .slick-dots .slick-active button {
   background: #2ecc71;
+}
+.slider__content .slick-slide {
+  outline: none;
 }
 
 .portfolio {
